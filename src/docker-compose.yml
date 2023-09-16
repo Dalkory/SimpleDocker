@@ -1,0 +1,8 @@
+version: "3"
+services:
+  server:
+    build: .
+  webserver:
+    build: ./docker_compose
+    ports:
+      - "80:8080"
